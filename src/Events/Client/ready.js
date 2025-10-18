@@ -6,8 +6,8 @@ const { loadCommands } = require("../../Structures/Handlers/commandHandler");
 // Importiert MongoDB
 const { connect } = require("mongoose");
 
-// IDs der Channels
 const { updateChannelNames } = require("../../Structures/Systems/timerChannel");
+const { updateBotStatus } = require("../../Structures/Systems/updatetStatus");
 
 module.exports = {
     name: "ready",
@@ -21,7 +21,9 @@ module.exports = {
         // Läd alle weiteren Handler (Command, Buttons, etc.)
         await loadCommands(client);
 
-        // Verbindet sich mit der Datenbank
+        // Updatet alle 5 Minuten die Channel Names
         setInterval(() => updateChannelNames(client), 300000);
+        // Updatet alle 1 Minute den Bot Status
+        setInterval(() => updateBotStatus(client), 60 * 1000);
     }
 }
