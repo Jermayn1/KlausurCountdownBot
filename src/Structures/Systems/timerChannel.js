@@ -4,8 +4,8 @@ const channelsSoop = ["1428797577595195432", "1428797805052297409"];
 
 // Klausur-Daten
 const examDates = {
-    GDI: new Date("2026-02-06T00:08:00Z"),  // GDI am 09.02.2026
-    SOOP: new Date("2026-01-30T00:00:00Z"), // SOOP am 30.01.2026
+    GDI: new Date("2026-02-06T09:00:00Z"),  // GDI am 09.02.2026
+    SOOP: new Date("2026-01-29T09:00:00Z"), // SOOP am 30.01.2026
 };
 
 // Channel-Namen Prefix
