@@ -1,7 +1,7 @@
 const { ActivityType } = require('discord.js');
 
 // Dein Klausurdatum
-const examDate = new Date("2026-02-09T00:00:00Z");
+const examDate = new Date("2026-02-06T00:08:00Z");
 
 /**
  * Setzt den Bot-Status auf die verbleibende Zeit bis zur Klausur
